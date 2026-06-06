@@ -1,8 +1,8 @@
-package VTT.Dice is
+package VTT_Dice is
 
    function Roll
      (Count : Positive;
       Sides : Positive)
       return Integer;
 
-end VTT.Dice;
+end VTT_Dice;

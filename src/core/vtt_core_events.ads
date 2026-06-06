@@ -1,4 +1,4 @@
-package VTT.Core.Events is
+package VTT_Core_Events is
 
    type Event_ID is new Natural;
 
@@ -6,4 +6,4 @@ package VTT.Core.Events is
       ID : Event_ID;
    end record;
 
-end VTT.Core.Events;
+end VTT_Core_Events;

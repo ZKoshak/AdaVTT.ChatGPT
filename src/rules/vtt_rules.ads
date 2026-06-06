@@ -1,4 +1,4 @@
-package VTT.Rules is
+package VTT_Rules is
 
    type Ruleset is limited interface;
 
@@ -6,4 +6,4 @@ package VTT.Rules is
      (Self : in out Ruleset)
    is abstract;
 
-end VTT.Rules;
+end VTT_Rules;

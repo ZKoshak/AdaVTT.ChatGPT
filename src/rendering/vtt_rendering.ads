@@ -1,6 +1,6 @@
-package VTT.Rendering is
+package VTT_Rendering is
 
    procedure Draw_Map
      (Target : in out Graphics_Device'Class);
 
-end VTT.Rendering;
+end VTT_Rendering;

@@ -1,4 +1,4 @@
-package VTT.HAL.Graphics is
+package VTT_HAL_Graphics is
 
    type Graphics_Device is limited interface;
 
@@ -7,4 +7,4 @@ package VTT.HAL.Graphics is
       X    : Integer;
       Y    : Integer) is abstract;
 
-end VTT.HAL.Graphics;
+end VTT_HAL_Graphics;
