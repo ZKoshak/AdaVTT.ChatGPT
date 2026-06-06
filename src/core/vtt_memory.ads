@@ -1,4 +1,4 @@
-package VTT_Core_Memory is
+package VTT_Memory is
 
    type Allocator is limited interface;
 
@@ -7,4 +7,4 @@ package VTT_Core_Memory is
       Size : Natural)
       return System.Address is abstract;
 
-end VTT_Core_Memory;
+end VTT_Memory;
