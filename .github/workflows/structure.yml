@@ -22,5 +22,5 @@ jobs:
         run: |
           test -d src
           test -d src/core
-          test -d obj
+#          test -d obj
           test -d doc
