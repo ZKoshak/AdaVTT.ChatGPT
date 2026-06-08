@@ -1,5 +1,14 @@
+# Build directories
+obj/
+bin/
+
 # Object file
 *.o
 
 # Ada Library Information
 *.ali
+
+*.exe
+
+.DS_Store
+Thumbs.db
