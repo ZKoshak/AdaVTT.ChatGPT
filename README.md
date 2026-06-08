@@ -16,4 +16,19 @@ ci/
 ├── build_janus.bat
 ├── build_artek.bat
 └── build_meridian.bat
+
+---
+
+## 🔷 AdaVTT Principle #1 (очень важно)
+
+> Canonical source tree must remain independent of any compiler or filesystem constraints.
+
+---
+
+## 🔷 AdaVTT Principle #2
+
+> All constraints (DOS 8.3, GW-GNAT quirks, etc.) must be expressed as build-time transformations, not source rewrites.
+
+---
+
 -->
