@@ -1,6 +1,6 @@
 package VTT_Events is
 
-   type Event_ID is new Natural;
+--   type Event_ID is new Natural;
 
    type Event is tagged record
       ID : Event_ID;
@@ -9,9 +9,15 @@ package VTT_Events is
    type Event_Kind is
    (
       Event_None,
-      Event_Token_Move,
-      Event_Map_Load,
-      Event_Dice_Roll
+
+      Event_Map_Loaded,
+      Event_Map_Unloaded,
+
+      Event_Token_Created,
+      Event_Token_Removed,
+      Event_Token_Moved,
+
+      Event_Dice_Rolled
    );
 
 end VTT_Events;
