@@ -1,0 +1,30 @@
+name: Style Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  style:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check for TAB characters
+        run: |
+          if grep -R -n $'\t' src/; then
+            echo "TAB characters found."
+            exit 1
+          fi
+
+      - name: Check for CRLF line endings
+        run: |
+          if find . \
+            -type f \
+            ! -path "./.git/*" \
+            -exec grep -I -l $'\r' {} \; | grep . ; then
+            echo "CRLF line endings found."
+            exit 1
+          fi

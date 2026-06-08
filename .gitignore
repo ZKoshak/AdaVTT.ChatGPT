@@ -2,13 +2,41 @@
 obj/
 bin/
 
+# GNAT artifacts
+*.ali
+*.o
+*.adt
+*.dg
+
 # Object file
 *.o
 
 # Ada Library Information
 *.ali
 
+# Executables
 *.exe
+*.out
 
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Editor files
+*~
+*.swp
+*.swo
+
+# macOS
 .DS_Store
+
+# Windows
 Thumbs.db
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/

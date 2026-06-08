@@ -1,0 +1,26 @@
+name: Project Structure
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required files
+        run: |
+          test -f README.md
+          test -f LICENSE.PD
+          test -f adavtt.gpr
+
+      - name: Verify required directories
+        run: |
+          test -d src
+          test -d src/core
+          test -d obj
+          test -d doc
