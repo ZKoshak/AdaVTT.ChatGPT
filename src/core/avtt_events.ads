@@ -2,9 +2,9 @@ package AVTT_Events is
 
 --   type Event_ID is new Natural;
 
-   type Event is tagged record
-      ID : Event_ID;
-   end record;
+--   type Event is tagged record
+--      ID : Event_ID;
+--   end record;
 
    type Event_Kind is
    (

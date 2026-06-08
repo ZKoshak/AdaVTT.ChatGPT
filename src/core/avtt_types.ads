@@ -1,12 +1,29 @@
 package AVTT_Types is
 
-   type Int8  is range -128 .. 127;
+   ------------------------------------------------------------------
+   -- Unsigned Integer Types
+   ------------------------------------------------------------------
+
    type UInt8 is mod 2 ** 8;
 
-   type Int16  is range -32768 .. 32767;
    type UInt16 is mod 2 ** 16;
 
-   type Int32  is range -2 ** 31 .. 2 ** 31 - 1;
    type UInt32 is mod 2 ** 32;
+
+   ------------------------------------------------------------------
+   -- Signed Integer Types
+   ------------------------------------------------------------------
+
+   type Int8 is range
+      -(2 ** 7) ..
+       (2 ** 7) - 1;
+
+   type Int16 is range
+      -(2 ** 15) ..
+       (2 ** 15) - 1;
+
+   type Int32 is range
+      -(2 ** 31) ..
+       (2 ** 31) - 1;
 
 end AVTT_Types;
