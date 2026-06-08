@@ -1,4 +1,4 @@
-package VTT_Network is
+package AVTT_Network is
 
    type Transport is limited interface;
 
@@ -7,4 +7,4 @@ package VTT_Network is
       Data : Stream_Element_Array)
    is abstract;
 
-end VTT_Network;
+end AVTT_Network;

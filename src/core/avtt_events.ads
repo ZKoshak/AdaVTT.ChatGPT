@@ -1,4 +1,4 @@
-package VTT_Events is
+package AVTT_Events is
 
 --   type Event_ID is new Natural;
 
@@ -20,4 +20,4 @@ package VTT_Events is
       Event_Dice_Rolled
    );
 
-end VTT_Events;
+end AVTT_Events;
